@@ -3,10 +3,8 @@ const express = require('express');
 const app = express();
 const port = 80;
 
-app.get('/', (req, res) => {
-    console.log('hey')
-    console.log(req.query)
-    res.send('Holi')
+app.get('/patata', (req, res) => {
+    res.send('Hola')
 })
 
 app.listen(port, function () {
